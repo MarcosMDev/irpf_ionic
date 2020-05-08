@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      IRPF
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Informe os dados abaixo</ion-card-subtitle>
+        <ion-card-title>Pagador</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Digite seu nome:</ion-label>
+          <ion-input placeholder="Pedro Lucas" [(ngModel)]="pagador.nome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Ganho Anual(R$):</ion-label>
+          <ion-input type="numeric" placeholder="450000" [(ngModel)]="pagador.ganhoAnual"></ion-input>
+        </ion-item>
+
+        <ion-card>
+          <ion-button (click)="calcular()" expand="block">Calcular</ion-button>
+        </ion-card>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      Desenvolvido por mim
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
