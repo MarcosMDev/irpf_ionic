@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pagador } from 'src/domain/model/pagador';
+import { Pagador } from 'src/app/domain/model/pagador';
 import { Router } from '@angular/router';
 
 @Component({

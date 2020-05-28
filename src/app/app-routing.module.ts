@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'result',
     loadChildren: () => import('./result/result.module').then( m => m.ResultPageModule)
   },
+  {
+    path: 'history',
+    loadChildren: () => import('./history/history.module').then( m => m.HistoryPageModule)
+  },
 ];
 
 @NgModule({
